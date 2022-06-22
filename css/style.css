@@ -16,6 +16,9 @@ body{
 	color: white;
 }
 
+/*--- INDEX ---*/
+
+
 .headerImg{
 	width: 100%;
 }
@@ -30,6 +33,12 @@ body{
 
 .tituloSucursal{
 	color: darkred;
+	margin-bottom: -3px;
+}
+
+.pSucursal{
+	border-top: solid 1px darkred;
+	padding-top: 15px;
 }
 
 
@@ -96,13 +105,15 @@ body{
 }
 
 
-
+/*--- CAROUSEL ---*/
 
 
 .cards-wrapper {
   display: flex;
   justify-content: center;
+ 
 }
+
 .card img{
 	width: 70%;
 	margin: auto;
@@ -116,9 +127,11 @@ body{
   border: none;
   border-radius: 0;
   text-align: center;
+  z-index: -3;
 }
 .carousel-inner {
   padding: 1em;
+  z-index: -4;
 }
 
 .carousel-control-prev,
@@ -188,7 +201,7 @@ body{
 
 
 
-/*Inicio de Productos*/
+/* ---- Inicio de Productos ----*/
 
 .products-list{
 	width: 82%;
@@ -348,7 +361,7 @@ div section h1,h2,h3{
 
 
 
-
+/*--------------------------- 1024PX --------------------------------------------*/
 
 @media screen and (max-width: 1024px){
 
@@ -423,13 +436,13 @@ div section h1,h2,h3{
 		100%{background-image: url(../imagenes/img-horizontal-aside/5.png);}
 	}
 
-/*--- FIN DE CONTACTO ----*/
+/*---- FIN DE NOSOTROS ----*/
 
 
 }
 
 
-
+/*-------------------------------------------------- 712PX ---------------------------------*/
 
 
 
@@ -439,6 +452,11 @@ div section h1,h2,h3{
 
 /*--- INICIO DE INDEX ---*/
 	
+	.mapa{
+		width: 90%;
+	}
+
+
 	.publicidad1{
 		justify-content: space-evenly;
 	}
@@ -461,7 +479,7 @@ div section h1,h2,h3{
 	}
 
 
-
+/*--- FIN DE INDEX ----*/
 
 
 
@@ -506,14 +524,15 @@ div section h1,h2,h3{
 	.products-list{
 		width: 100%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	}
 
 	.products-list .product-item{
-		width: 35%;
+		width: 48%;
 		margin-left: 0;
 	}
 
+/*--- FIN DE LIBRERIA ------*/
 
 
 /*--- NOSOTROS ---*/
@@ -529,6 +548,10 @@ div section h1,h2,h3{
 
 
 }
+
+
+
+/*-------------------------------- 670PX -----------------------------*/
 
 
 @media screen and (max-width: 670px){
