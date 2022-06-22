@@ -134,6 +134,7 @@ body{
   z-index: -4;
 }
 
+
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #e1e1e1;
@@ -143,7 +144,6 @@ body{
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 
 
@@ -329,8 +329,13 @@ div section h1,h2,h3{
 }
 
 .imgMision{
-	z-index: -3;
+	z-index: -10;
 }
+
+.navZ{
+	z-index: 8;
+}
+
 
 
 
