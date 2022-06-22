@@ -325,7 +325,16 @@ div section h1,h2,h3{
 
 .bg-darck-fluid{
 	background-color: rgba(0, 0, 0, .1);
+
 }
+
+.imgMision{
+	z-index: -3;
+}
+
+
+
+
 
 /*--FIN DE NOSOTROS--*/
 
