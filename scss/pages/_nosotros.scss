@@ -1,0 +1,107 @@
+/*--INICIO DE NOSOTROS--*/
+.quinesSomos {
+    display: grid;
+    grid-template-areas:
+        "section1 asideImg"
+        "section2 asideImg"
+        "section3 asideImg"
+        "asideVisita asideImg";
+    min-height: 100vh;
+    grid-template-columns: 85% 14%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px 1%;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-areas:
+            "section1"
+            "section2"
+            "section3"
+            "asideVisita"
+            "asideImg";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto 4vh 12vh;
+        grid-gap: auto 0;
+    }
+
+    @media screen and (max-width: 530px) {
+        grid-template-areas:
+            "section1"
+            "section2"
+            "section3"
+            "asideVisita"
+            "asideImg";
+        grid-template-rows: auto auto auto 7vh 12vh;
+    }
+}
+
+#section1 {
+    grid-area: section1;
+    width: 90%;
+    margin: auto;
+}
+
+#section2 {
+    grid-area: section2;
+    width: 90%;
+    margin: auto;
+}
+
+#section3 {
+    grid-area: section3;
+    width: 90%;
+    margin: auto;
+}
+
+#asideImg {
+    grid-area: asideImg;
+    background-size: cover;
+    animation-name: animationAside;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+#asideVisita {
+    text-align: center;
+    grid-area: asideVisita;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    font-family: $secondFont;
+
+    @media screen and (max-width: 1024px) {
+        height: 15px
+    }
+}
+
+.padingNos {
+    padding: 0 30px;
+}
+
+
+@keyframes animationAside {
+    0% {
+        background-image: url(../imagenes/img-vertical-aside/5.gif);
+    }
+
+    25% {
+        background-image: url(../imagenes/img-vertical-aside/2.png);
+    }
+
+    50% {
+        background-image: url(../imagenes/img-vertical-aside/3.png);
+    }
+
+    75% {
+        background-image: url(../imagenes/img-vertical-aside/4.png);
+    }
+
+    100% {
+        background-image: url(../imagenes/img-vertical-aside/5.gif);
+    }
+}
+
+.bg-darck-fluid {
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+/*--FIN DE NOSOTROS--*/

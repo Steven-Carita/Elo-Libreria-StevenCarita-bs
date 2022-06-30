@@ -1,0 +1,125 @@
+@media screen and (max-width: 1024px) {
+    @keyframes animationAside {
+        0% {
+            background-image: url(../imagenes/img-horizontal-aside/5.png);
+        }
+
+        25% {
+            background-image: url(../imagenes/img-horizontal-aside/2.png);
+        }
+
+        50% {
+            background-image: url(../imagenes/img-horizontal-aside/3.png);
+        }
+
+        75% {
+            background-image: url(../imagenes/img-horizontal-aside/4.png);
+        }
+
+        100% {
+            background-image: url(../imagenes/img-horizontal-aside/5.png);
+        }
+    }
+}
+
+@media screen and (max-width: 712px) {
+    @keyframes animationAside {
+        0% {
+            background-image: url(../imagenes/img-horizontal-aside/mobile/5.png);
+        }
+
+        25% {
+            background-image: url(../imagenes/img-horizontal-aside/mobile/2.png);
+        }
+
+        50% {
+            background-image: url(../imagenes/img-horizontal-aside/mobile/3.png);
+        }
+
+        75% {
+            background-image: url(../imagenes/img-horizontal-aside/mobile/4.png);
+        }
+
+        100% {
+            background-image: url(../imagenes/img-horizontal-aside/mobile/5.png);
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    /*--- NOSOTROS ---*/
+    @keyframes animationAside {
+        0% {
+            background-image: url(../imagenes/img-horizontal-aside/670/5.png);
+        }
+
+        25% {
+            background-image: url(../imagenes/img-horizontal-aside/670/2.png);
+        }
+
+        50% {
+            background-image: url(../imagenes/img-horizontal-aside/670/3.png);
+        }
+
+        75% {
+            background-image: url(../imagenes/img-horizontal-aside/670/4.png);
+        }
+
+        100% {
+            background-image: url(../imagenes/img-horizontal-aside/670/5.png);
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /*--- NOSOTROS ---*/
+    @keyframes animationAside {
+        0% {
+            background-image: url(../imagenes/img-horizontal-aside/600/5.png);
+        }
+
+        25% {
+            background-image: url(../imagenes/img-horizontal-aside/600/2.png);
+        }
+
+        50% {
+            background-image: url(../imagenes/img-horizontal-aside/600/3.png);
+        }
+
+        75% {
+            background-image: url(../imagenes/img-horizontal-aside/600/4.png);
+        }
+
+        100% {
+            background-image: url(../imagenes/img-horizontal-aside/600/5.png);
+        }
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    @keyframes animationAside {
+        0% {
+            background-image: url(../imagenes/img-horizontal-aside/530/5.png);
+        }
+
+        25% {
+            background-image: url(../imagenes/img-horizontal-aside/530/2.png);
+        }
+
+        50% {
+            background-image: url(../imagenes/img-horizontal-aside/530/3.png);
+        }
+
+        75% {
+            background-image: url(../imagenes/img-horizontal-aside/530/4.png);
+        }
+
+        100% {
+            background-image: url(../imagenes/img-horizontal-aside/530/5.png);
+        }
+    }
+}

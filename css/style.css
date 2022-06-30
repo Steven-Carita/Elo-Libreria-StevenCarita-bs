@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=IBM+Plex+Sans:wght@300&display=swap");
 body {
-  background-color: #CCCC; }
+  background-color: #cccc; }
 
 .tamanoImg {
   width: 70%; }
@@ -28,6 +28,9 @@ body {
       padding-left: 58px;
       width: 150px; } }
 
+.navZ {
+  z-index: 8; }
+
 @media screen and (max-width: 767px) {
   .headerDes {
     display: none; } }
@@ -39,8 +42,7 @@ body {
   display: none; }
   @media screen and (max-width: 767px) {
     .headerMo {
-      display: inline;
-      background-color: yellow; } }
+      display: inline; } }
 
 .header5 {
   width: 100%; }
@@ -339,9 +341,6 @@ body {
 
 .bg-darck-fluid {
   background-color: rgba(0, 0, 0, 0.1); }
-
-.navZ {
-  z-index: 8; }
 
 /*--FIN DE NOSOTROS--*/
 /*--INICIO DE CONTACTO--*/

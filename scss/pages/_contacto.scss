@@ -1,0 +1,24 @@
+/*--INICIO DE CONTACTO--*/
+.headerImg2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contactos {
+    width: 80%;
+    margin: auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.contactoH {
+    border: none;
+
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/*---FIN DE CONTACTO---*/

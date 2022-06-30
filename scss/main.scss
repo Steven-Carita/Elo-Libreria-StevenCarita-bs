@@ -1,4 +1,13 @@
+body{
+    background-color: #cccc;
+}
+
 @import "_vars"; 
 @import "_Fonts";
-@import "_body"; 
-@import "_proyecto";
+@import "pages/commons";
+@import "pages/escritorio";
+@import "pages/libreria";
+@import "pages/combos";
+@import "pages/nosotros";
+@import "pages/contacto";
+@import "pages/mediaq"

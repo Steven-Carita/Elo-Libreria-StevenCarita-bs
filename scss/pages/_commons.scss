@@ -1,0 +1,36 @@
+.tamanoImg {
+    width: 70%;
+
+    @media screen and (max-width: 415px) {
+        width: 100%;
+    }
+}
+
+.bg-darckred {
+    background: linear-gradient(to left, $secondaryColor, $mainColor);
+}
+
+.colorWhiteText {
+    color: white;
+}
+
+.inputN:focus {
+    box-shadow: none;
+}
+
+.padN {
+    padding-left: 0;
+
+    @media screen and (max-width: 992px) {
+        padding-left: 120px;
+    }
+
+    @media screen and (max-width: 415px) {
+        padding-left: 58px;
+        width: 150px;
+    }
+}
+
+.navZ {
+    z-index: 8;
+}

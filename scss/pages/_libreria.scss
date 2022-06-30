@@ -1,0 +1,136 @@
+/*---iNICIO DE LIBRERIA---*/
+.wrap {
+    width: 90%;
+    margin: auto;
+
+    h1 {
+        color: #494B4D;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 2.5rem;
+        font-family: $mainFont;
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #C7C7C7;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.store-wrapper {
+    display: flex;
+
+    @media screen and (max-width: 712px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+
+    @media screen and (max-width: 712px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+.category_list .category_item {
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: $mainColor;
+    font-size: 1.3rem;
+    font-family: $secondFont;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        transform: scale(1.06);
+        transition: 0.4s;
+        background-color: $secondaryColor;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 10px 0;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 712px) {
+        width: 30%;
+        padding: 5px 0;
+        margin: 0 3px 7px 3px;
+    }
+}
+
+/* ---- Inicio de Productos ----*/
+
+.products-list {
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 712px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.products-list .product-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+        background-color: black;
+
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-align: center;
+        font-family: $secondFont;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 712px) {
+        width: 48%;
+        margin-left: 0;
+    }
+}
+
+/*--FIN DE LIBRERIA*/
