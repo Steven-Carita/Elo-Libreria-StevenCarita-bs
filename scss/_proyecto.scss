@@ -1,10 +1,8 @@
 .tamanoImg {
     width: 70%;
-
-    @media screen and (max-width: 415px) {
+    @media screen and (max-width: 415px){
         width: 100%;
     }
-
 }
 
 .bg-darckred {
@@ -33,10 +31,28 @@
 }
 
 // ------- INDEX 
-
+.headerDes{
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
 .headerImg {
     width: 100%;
 }
+
+.headerMo{
+    display: none;
+    @media screen and (max-width: 767px){
+        display: inline;
+        background-color: yellow;
+    }
+}
+
+.header5{
+    width: 100%;
+}
+
+
 
 .tituloPromociones {
     font-family: $mainFont;

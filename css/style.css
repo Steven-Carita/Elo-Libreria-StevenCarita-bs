@@ -28,7 +28,21 @@ body {
       padding-left: 58px;
       width: 150px; } }
 
+@media screen and (max-width: 767px) {
+  .headerDes {
+    display: none; } }
+
 .headerImg {
+  width: 100%; }
+
+.headerMo {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .headerMo {
+      display: inline;
+      background-color: yellow; } }
+
+.header5 {
   width: 100%; }
 
 .tituloPromociones {
