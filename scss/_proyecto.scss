@@ -10,6 +10,18 @@
     color: white;
 }
 
+.inputN:focus {
+    box-shadow: none;
+}
+
+.padN {
+    padding-left: 0;
+
+    @media screen and (max-width: 992px) {
+        padding-left: 120px;
+    }
+}
+
 // ------- INDEX 
 
 .headerImg {
@@ -65,12 +77,13 @@
     height: 300px;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 712px){
+    @media screen and (max-width: 712px) {
         width: 90%
     }
-    @media screen and (max-width: 412px){
-		height: 255px;
-		margin-bottom: 30px;
+
+    @media screen and (max-width: 412px) {
+        height: 255px;
+        margin-bottom: 30px;
     }
 }
 
@@ -228,6 +241,12 @@
     text-align: center;
     text-decoration: none;
     color: white;
+
+    &:hover {
+        transform: scale(1.06);
+        transition: 0.4s;
+        background-color: $secondaryColor;
+    }
 
     @media screen and (max-width: 1024px) {
         padding: 10px 0;
@@ -421,6 +440,16 @@
     background-color: rgba(0, 0, 0, .6);
 }
 
+.contactoH {
+    border:none;
+
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
 /*---FIN DE CONTACTO---*/
 
 @media screen and (max-width: 1024px) {
@@ -524,6 +553,7 @@
     }
 
 }
+
 @media screen and (max-width: 530px) {
     @keyframes animationAside {
         0% {

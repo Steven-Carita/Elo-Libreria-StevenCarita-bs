@@ -12,6 +12,15 @@ body {
 .colorWhiteText {
   color: white; }
 
+.inputN:focus {
+  box-shadow: none; }
+
+.padN {
+  padding-left: 0; }
+  @media screen and (max-width: 992px) {
+    .padN {
+      padding-left: 120px; } }
+
 .headerImg {
   width: 100%; }
 
@@ -185,6 +194,10 @@ body {
   text-align: center;
   text-decoration: none;
   color: white; }
+  .category_list .category_item:hover {
+    transform: scale(1.06);
+    transition: 0.4s;
+    background-color: red; }
   @media screen and (max-width: 1024px) {
     .category_list .category_item {
       padding: 10px 0;
@@ -321,6 +334,11 @@ body {
   padding: 5px 20px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6); }
+
+.contactoH {
+  border: none; }
+  .contactoH:focus {
+    box-shadow: none; }
 
 /*---FIN DE CONTACTO---*/
 @media screen and (max-width: 1024px) {
