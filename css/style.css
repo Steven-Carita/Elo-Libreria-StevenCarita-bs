@@ -5,6 +5,9 @@ body {
 
 .tamanoImg {
   width: 70%; }
+  @media screen and (max-width: 415px) {
+    .tamanoImg {
+      width: 100%; } }
 
 .bg-darckred {
   background: linear-gradient(to left, red, darkred); }
@@ -20,6 +23,10 @@ body {
   @media screen and (max-width: 992px) {
     .padN {
       padding-left: 120px; } }
+  @media screen and (max-width: 415px) {
+    .padN {
+      padding-left: 58px;
+      width: 150px; } }
 
 .headerImg {
   width: 100%; }

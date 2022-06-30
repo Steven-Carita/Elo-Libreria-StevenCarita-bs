@@ -1,5 +1,10 @@
 .tamanoImg {
     width: 70%;
+
+    @media screen and (max-width: 415px) {
+        width: 100%;
+    }
+
 }
 
 .bg-darckred {
@@ -19,6 +24,11 @@
 
     @media screen and (max-width: 992px) {
         padding-left: 120px;
+    }
+
+    @media screen and (max-width: 415px) {
+        padding-left: 58px;
+        width: 150px;
     }
 }
 
@@ -441,7 +451,7 @@
 }
 
 .contactoH {
-    border:none;
+    border: none;
 
 
     &:focus {
