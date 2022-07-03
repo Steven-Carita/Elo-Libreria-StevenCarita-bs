@@ -36,20 +36,17 @@
 
 #section1 {
     grid-area: section1;
-    width: 90%;
-    margin: auto;
+    @include nosotrosSection;
 }
 
 #section2 {
     grid-area: section2;
-    width: 90%;
-    margin: auto;
+    @include nosotrosSection;
 }
 
 #section3 {
     grid-area: section3;
-    width: 90%;
-    margin: auto;
+    @include nosotrosSection;
 }
 
 #asideImg {
@@ -100,7 +97,7 @@
 }
 
 .bg-darck-fluid {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: map-get($mapaDeColores , $backgroundContacto);
 
 }
 

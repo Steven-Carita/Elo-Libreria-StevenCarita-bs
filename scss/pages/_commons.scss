@@ -34,3 +34,27 @@
 .navZ {
     z-index: 8;
 }
+
+
+.btnColorBuscador {
+    background-color: rgb(235, 205, 9);
+    border: none;
+
+    &:hover {
+        background-color: rgb(255, 217, 0);
+        border: none;
+    }
+}
+
+.btnColorPromociones {
+    @extend .btnColorBuscador;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: rgb(235, 205, 9);
+        border: none;
+        transform: scale(1.05);
+        transition: 0.5s
+    }
+
+}

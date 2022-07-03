@@ -31,6 +31,21 @@ body {
 .navZ {
   z-index: 8; }
 
+.btnColorBuscador, .btnColorPromociones {
+  background-color: #ebcd09;
+  border: none; }
+  .btnColorBuscador:hover, .btnColorPromociones:hover {
+    background-color: #ffd900;
+    border: none; }
+
+.btnColorPromociones {
+  border-radius: 10px; }
+  .btnColorPromociones:hover {
+    background-color: #ebcd09;
+    border: none;
+    transform: scale(1.05);
+    transition: 0.5s; }
+
 @media screen and (max-width: 767px) {
   .headerDes {
     display: none; } }
@@ -57,31 +72,26 @@ body {
 .tituloSucursal {
   color: darkred;
   margin-bottom: 5px;
-  font-family: "IBM Plex Sans", sans-serif; }
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-top: 5px; }
 
 .pSucursal {
   border-top: solid 1px darkred;
   padding-top: 20px;
   font-family: "IBM Plex Sans Arabic", sans-serif; }
 
-.fondoBlack {
-  background: #252525; }
-
 .dimensionesCarusel {
   width: 98%;
   margin: auto; }
 
-.backgroundGris {
-  background: #CCCC; }
-
 .sucursal {
   display: flex;
-  flex-direction: column;
   justify-content: start;
   align-items: center;
+  flex-direction: column;
+  height: 30rem;
   width: 90%;
-  margin: auto;
-  height: 30rem; }
+  margin: auto; }
 
 .mapa {
   width: 60%;
@@ -111,22 +121,21 @@ body {
         margin-top: 30px; } }
 
 .publicidad2 {
-  margin: 98%;
+  width: 98%;
   display: flex;
-  justify-content: space-evenly;
-  margin: 30px 0 15px 0; }
+  justify-content: space-around;
+  align-items: none;
+  margin: 30px auto 15px auto; }
   @media screen and (max-width: 712px) {
     .publicidad2 {
-      width: 98%;
-      display: flex;
       flex-direction: column;
       align-items: center; } }
   .publicidad2 img {
     width: 49%;
-    margin: 0; }
+    margin: auto; }
     @media screen and (max-width: 712px) {
       .publicidad2 img {
-        width: 90%;
+        width: 95%;
         margin: 10px 0; } }
 
 .aside {
@@ -139,7 +148,8 @@ body {
 /*--- CAROUSEL ---*/
 .cards-wrapper {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: none; }
 
 .card {
   margin: 0 0.5em;
@@ -240,7 +250,6 @@ body {
   @media screen and (max-width: 712px) {
     .products-list {
       width: 100%;
-      display: flex;
       justify-content: space-between; } }
 
 .products-list .product-item {
@@ -249,8 +258,9 @@ body {
   margin-bottom: 25px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
   display: flex;
-  flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-direction: column;
   align-self: flex-start; }
   .products-list .product-item img {
     width: 100%; }

@@ -1,0 +1,10 @@
+@mixin flexbox($aling-items, $justify-content){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $aling-items;
+}
+
+@mixin nosotrosSection{
+    width: 90%;
+    margin: auto;
+}

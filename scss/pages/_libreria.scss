@@ -4,7 +4,7 @@
     margin: auto;
 
     h1 {
-        color: #494B4D;
+        color: map-get($mapaDeColores, $tituloColor);
         font-weight: 500;
         display: flex;
         flex-direction: column;
@@ -17,7 +17,7 @@
             content: '';
             width: 100%;
             height: 1px;
-            background: #C7C7C7;
+            background: map-get($mapaDeColores, $tituloAfter);
             margin: 10px 0;
         }
 
@@ -55,18 +55,18 @@
     width: 90%;
     padding: 15px 0;
     margin-bottom: 20px;
-    background-color: $mainColor;
+    background-color: map-get($mapaDeColores, $mainColor);
     font-size: 1.3rem;
     font-family: $secondFont;
 
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: map-get($mapaDeColores, $textWhite);
 
     &:hover {
         transform: scale(1.06);
         transition: 0.4s;
-        background-color: $secondaryColor;
+        background-color: map-get($mapaDeColores, $secondaryColor);
     }
 
     @media screen and (max-width: 1024px) {
@@ -91,7 +91,6 @@
 
     @media screen and (max-width: 712px) {
         width: 100%;
-        display: flex;
         justify-content: space-between;
     }
 }
@@ -100,10 +99,9 @@
     width: 22%;
     margin-left: 3%;
     margin-bottom: 25px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.22);
-    display: flex;
+    box-shadow: 0px 0px 20px 0px map-get($mapaDeColores, $shadowProductos);
+    @include flexbox(center, none);
     flex-direction: column;
-    align-items: center;
     align-self: flex-start;
 
     img {
@@ -114,9 +112,9 @@
         display: block;
         width: 100%;
         padding: 8px 0;
-        background-color: black;
+        background-color: map-get($mapaDeColores, $backgroundProd);
 
-        color: white;
+        color: map-get($mapaDeColores, $textWhite);
         font-size: 1.2rem;
         text-decoration: none;
         text-align: center;
