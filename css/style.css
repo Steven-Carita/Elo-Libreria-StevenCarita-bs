@@ -31,6 +31,9 @@ body {
 .navZ {
   z-index: 8; }
 
+.botonNav:focus {
+  box-shadow: none; }
+
 .btnColorBuscador, .btnColorPromociones {
   background-color: #ebcd09;
   border: none; }
@@ -112,12 +115,15 @@ body {
   justify-content: space-around; }
   @media screen and (max-width: 712px) {
     .publicidad1 {
-      justify-content: space-evenly; } }
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center; } }
   .publicidad1 img {
-    width: 27%; }
+    width: 27%;
+    border-radius: 10px; }
     @media screen and (max-width: 712px) {
       .publicidad1 img {
-        width: 32%;
+        width: 70%;
         margin-top: 30px; } }
 
 .publicidad2 {
@@ -132,7 +138,8 @@ body {
       align-items: center; } }
   .publicidad2 img {
     width: 49%;
-    margin: auto; }
+    margin: auto;
+    border-radius: 10px; }
     @media screen and (max-width: 712px) {
       .publicidad2 img {
         width: 95%;
@@ -283,6 +290,13 @@ body {
       margin-left: 0; } }
 
 /*--FIN DE LIBRERIA*/
+.btnCombos {
+  background-color: darkred;
+  border: none; }
+  .btnCombos:hover {
+    background-color: red;
+    transition: 1.1s; }
+
 /*--INICIO DE NOSOTROS--*/
 .quinesSomos {
   display: grid;
@@ -363,12 +377,99 @@ body {
   margin: auto;
   padding: 5px 20px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.4); }
+  .contactos h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: darkred; }
+  .contactos label {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    color: darkred;
+    font-size: 23px; }
+  .contactos input {
+    background-color: rgba(0, 0, 0, 0.5); }
+  .contactos button {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: darkred;
+    border: none; }
+    .contactos button:hover {
+      transform: scale(1.05);
+      background-color: red;
+      transition: 0.5s; }
+  .contactos textarea {
+    background-color: rgba(0, 0, 0, 0.5); }
 
 .contactoH {
   border: none; }
   .contactoH:focus {
-    box-shadow: none; }
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 2px darkred; }
+
+.contactoSucursalesTitle {
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 95%;
+  margin: 25px auto;
+  color: darkred;
+  border-bottom: solid 1px darkred;
+  padding-bottom: 5px; }
+  @media screen and (max-width: 767px) {
+    .contactoSucursalesTitle {
+      width: 82%; } }
+
+#sectionContactoSucursales {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    #sectionContactoSucursales {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center; } }
+
+.contenedorContacto {
+  width: 50%;
+  margin-top: 20px; }
+  @media screen and (max-width: 767px) {
+    .contenedorContacto {
+      width: 90%; } }
+  .contenedorContacto figure {
+    margin: auto;
+    position: relative;
+    width: 90%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); }
+    .contenedorContacto figure img {
+      width: 100%;
+      transition: all 500ms ease-out; }
+    .contenedorContacto figure .capa {
+      position: absolute;
+      top: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden; }
+      .contenedorContacto figure .capa h3 {
+        font-weight: 300;
+        margin-bottom: 30%;
+        margin-top: 15%;
+        transition: all 500ms ease-out; }
+      .contenedorContacto figure .capa p {
+        line-height: 1.5;
+        width: 80%;
+        margin: auto; }
+    .contenedorContacto figure:hover > .capa {
+      opacity: 1;
+      visibility: visible; }
+      .contenedorContacto figure:hover > .capa h3 {
+        margin-top: 30%;
+        margin-bottom: 20px; }
+    .contenedorContacto figure:hover > img {
+      transform: scale(1.1); }
 
 /*---FIN DE CONTACTO---*/
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,10 @@
+// Inicio de combos
+
+.btnCombos{
+    background-color: map-get($mapaDeColores, $mainColor);
+    border: none;
+    &:hover{
+        background-color: map-get($mapaDeColores, $secondaryColor);
+        transition: 1.1s;
+    }
+}

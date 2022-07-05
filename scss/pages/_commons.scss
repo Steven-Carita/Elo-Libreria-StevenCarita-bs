@@ -11,7 +11,7 @@
 }
 
 .colorWhiteText {
-    color: white;
+    color: map-get($mapaDeColores, $textWhite);
 }
 
 .inputN:focus {
@@ -35,13 +35,17 @@
     z-index: 8;
 }
 
+.botonNav:focus{
+    box-shadow: none;
+
+}
 
 .btnColorBuscador {
-    background-color: rgb(235, 205, 9);
+    background-color: map-get($mapaDeColores, $mainColorBotton);
     border: none;
 
     &:hover {
-        background-color: rgb(255, 217, 0);
+        background-color: map-get($mapaDeColores, $hoverColorBotton);
         border: none;
     }
 }
@@ -51,7 +55,7 @@
     border-radius: 10px;
 
     &:hover {
-        background-color: rgb(235, 205, 9);
+        background-color: map-get($mapaDeColores, $mainColorBotton);
         border: none;
         transform: scale(1.05);
         transition: 0.5s

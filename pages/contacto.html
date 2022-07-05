@@ -33,7 +33,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="container-fluid">
-				<form class="d-flex my-3 my-lg-0" role="search">
+				<form class="d-flex my-1 my-lg-0" role="search">
 					<input class="form-control me-2 rounded-pill inputN" type="search"
 						placeholder="¿Que estas buscando?" aria-label="Search">
 					<button class="btn btn-warning me-2 rounded-4 btnColorBuscador" type="submit">Buscar</button>
@@ -66,33 +66,79 @@
 	</header>
 	<main>
 		<div class="contactos">
-			<h1 class="text-center text-danger">Contactanos</h1>
+			<h1 class="text-center">Contactanos</h1>
 			<div class="row g-3 mb-4 mt-3">
 				<div class="col">
-					<label for="nombre" class="form-label text-light">Nombre</label>
-					<input type="text" id="nombre" class="form-control contactoH" placeholder="Ej: Pedro"
+					<label for="nombre" class="form-label">Nombre:</label>
+					<input type="text" id="nombre" class="form-control contactoH text-white" placeholder="Ej: Pedro"
 						aria-label="First name">
 				</div>
 				<div class="col">
-					<label for="apellido" class="form-label text-light">Apellido</label>
-					<input type="text" id="apellido" class="form-control contactoH" placeholder="Ej: Gutierrez"
+					<label for="apellido" class="form-label">Apellido:</label>
+					<input type="text" id="apellido" class="form-control contactoH text-white" placeholder="Ej: Gutierrez"
 						aria-label="Last name">
 				</div>
 			</div>
 			<div class="mb-3">
-				<label for="exampleFormControlInput1" class="form-label text-light">Email</label>
-				<input type="email" class="form-control contactoH" id="exampleFormControlInput1"
+				<label for="exampleFormControlInput1" class="form-label">Email:</label>
+				<input type="email" class="form-control contactoH text-white" id="exampleFormControlInput1"
 					placeholder="name@example.com">
 			</div>
 			<div class="mb-3">
-				<label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
-				<textarea class="form-control contactoH" id="exampleFormControlTextarea1" rows="3"></textarea>
+				<label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+				<textarea class="form-control contactoH text-white" id="exampleFormControlTextarea1" rows="5"></textarea>
 			</div>
 			<div class="d-grid gap-2 col-6 mx-auto my-4">
-				<button class="btn btn-danger" type="button">Enviar</button>
+				<button class="btn text-white" type="button">Enviar</button>
 			</div>
 		</div>
-	</main>
+	</main >
+	<div id= "sucursales">
+		<h2 class="text-center contactoSucursalesTitle">Sucursales</h2>
+		<section id="sectionContactoSucursales">
+			<article class="contenedorContacto">
+				<figure>
+					<img class="imgSectionContacto" src="../imagenes/imgcontacto/sucursal1.jpeg" alt="">
+					<div class="capa">
+						<h3 class="text-white">Liniers</h3>
+						<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem in
+							corrupti!</p>
+					</div>
+				</figure>
+			</article>
+			<article class="contenedorContacto">
+				<figure>
+					<img class="imgSectionContacto" src="../imagenes/imgcontacto/sucursal2.jpeg" alt="">
+					<div class="capa">
+						<h3 class="text-white">Flores</h3>
+						<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+							suscipit dignissimos
+							repellat!</p>
+					</div>
+				</figure>
+			</article>
+			<article class="contenedorContacto">
+				<figure>
+					<img class="imgSectionContacto" src="../imagenes/imgcontacto/sucursal3.jpg" alt="">
+					<div class="capa">
+						<h3 class="text-white">Caballito</h3>
+						<p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum accusantium
+							quod quos.</p>
+					</div>
+				</figure>
+			</article>
+			<article class="contenedorContacto">
+				<figure>
+					<img class="imgSectionContacto" src="../imagenes/imgcontacto/sucursal4.jpg" alt="">
+					<div class="capa">
+						<h3 class="text-white">Recoleta</h3>
+						<p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus
+							enim cum?</p>
+					</div>
+				</figure>
+			</article>
+		</section>
+	</div>
 	<aside class="aside">
 		elo es la mejor libreria del pais. ¡No dudes en venir a visitarnos!
 	</aside>
@@ -106,8 +152,8 @@
 					<p class="text-secondary">Buenos Aires, Argentina.</p>
 				</div>
 				<div class="col-xs-12 col-md-6 col-lg-3">
-					<p class="h5 mb-3">Sucursales</p>
-					<div class="mb-2">
+					<a class="h5 mb-3 text-white text-decoration-none" href="contacto.html#sucursales">Sucursales</a>
+					<div class="mb-2 mt-3">
 						<a class="text-secondary text-decoration-none link-light" href="">Recoleta | Av.Santa Fe 460</a>
 					</div>
 					<div class="mb-2">
