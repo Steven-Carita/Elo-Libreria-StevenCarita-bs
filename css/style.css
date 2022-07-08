@@ -612,3 +612,55 @@ span {
       background-image: url(../imagenes/img-horizontal-aside/530/4.png); }
     100% {
       background-image: url(../imagenes/img-horizontal-aside/530/5.png); } } }
+
+#error {
+  background: #081c22;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif; }
+  #error .img404 {
+    width: 50%; }
+    @media screen and (max-width: 1024px) {
+      #error .img404 {
+        width: 80%; } }
+    @media screen and (max-width: 430px) {
+      #error .img404 {
+        width: 90%; } }
+  #error h1 {
+    color: #e9eef5;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    text-align: center; }
+    @media screen and (max-width: 630px) {
+      #error h1 {
+        font-size: 16px; } }
+    @media screen and (max-width: 430px) {
+      #error h1 {
+        width: 80%;
+        line-height: 1.7; } }
+  #error h2 {
+    color: #e9eef5;
+    font-size: 20px;
+    padding: 0;
+    text-align: center; }
+    @media screen and (max-width: 630px) {
+      #error h2 {
+        font-size: 16px; } }
+
+.errorContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center; }
+  .errorContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .errorContainer a .imgEloError {
+      width: 80%; }
+      @media screen and (max-width: 1024px) {
+        .errorContainer a .imgEloError {
+          width: 65%; } }
