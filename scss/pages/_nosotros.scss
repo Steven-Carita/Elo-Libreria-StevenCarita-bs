@@ -37,17 +37,66 @@
 #section1 {
     grid-area: section1;
     @include nosotrosSection;
+
+    h1{
+        font-family: $mainFont;
+    }
+
+    h5 {
+        font-family: $mainFont;
+    }
+
+    p {
+        font-family: $secondFont;
+        line-height: 2;
+        margin-right: 30px;
+        @media screen and (max-width: 992px){
+            margin-right: 0;
+        }
+    }
 }
 
 #section2 {
     grid-area: section2;
     @include nosotrosSection;
+
+    h5 {
+        font-family: $mainFont;
+    }
+
+    p {
+        font-family: $secondFont;
+        line-height: 2;
+        margin-right: 30px;
+        @media screen and (max-width: 992px){
+            margin-right: 0;
+        }
+    }
 }
 
 #section3 {
     grid-area: section3;
     @include nosotrosSection;
+
+    h5 {
+        font-family: $mainFont;
+    }
+
+    p {
+        font-family: $secondFont;
+        line-height: 2;
+        margin-right: 30px;
+        @media screen and (max-width: 992px){
+            margin-right: 0;
+        }
+    }
 }
+
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 #asideImg {
     grid-area: asideImg;

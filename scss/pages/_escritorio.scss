@@ -132,6 +132,7 @@
 
 .cards-wrapper {
     @include flexbox(none, center);
+    height: 100%;
 }
 
 .card {
@@ -140,6 +141,11 @@
     border: none;
     border-radius: 0;
     text-align: center;
+    width: 33%;
+    @media screen and (max-width: 767px){
+        width: 90%;
+    } 
+
 
     img {
         width: 70%;
@@ -159,6 +165,16 @@
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.pCard{
+    height: 6vh;
+    @media screen and (max-width: 877px){
+        height: 8vh;
+    }
+    @media screen and (max-width: 767px){
+        height: auto;
+    }
 }
 
 /*--FIN INDEX*/

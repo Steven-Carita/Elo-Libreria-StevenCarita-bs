@@ -8,3 +8,12 @@
         transition: 1.1s;
     }
 }
+
+.pCombos{
+    @media screen and (max-width: 790px){
+        height: 10vh;
+    }
+    @media screen and (max-width: 767px){
+        height: auto;
+    }
+}
