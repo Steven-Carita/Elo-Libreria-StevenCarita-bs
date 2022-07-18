@@ -184,7 +184,8 @@ div.card-body p {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
+  background-color: #b55353;
+  margin: 0 3vh;
   width: 5vh;
   height: 5vh;
   border-radius: 50%;

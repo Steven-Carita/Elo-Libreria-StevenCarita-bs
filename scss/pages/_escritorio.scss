@@ -160,6 +160,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     background-color: map-get($mapaDeColores, $backgroundCarousel);
+    margin: 0 3vh;
     width: 5vh;
     height: 5vh;
     border-radius: 50%;
